@@ -18,10 +18,20 @@
  */
 
 if (php_sapi_name() != 'cli') {
-	die('Command line only.');
+	die("Command line only.\n");
 }
 
-exec('composer install');
+// Throw exceptions on all errors
+set_error_handler(function ($errno, $errstr, $errfile, $errline ) {
+	if (error_reporting()) {
+		throw new \ErrorException($errstr, 0, $errno, $errfile, $errline);
+	}
+});
+
+exec('composer update', $out, $ret);
+if ($ret != 0) {
+	die("Composer failed.\n");
+}
 
 if (!is_dir('statemachine')) {
 	mkdir('statemachine');

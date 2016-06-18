@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "smalldb/smalldb-rest": "dev-master"
+        "smalldb/smalldb-rest": "*"
     },
     "autoload": {
         "psr-4": { "": "class/" }
