@@ -1,0 +1,19 @@
+{
+    "name": "smalldb/smalldb-rest-example-app",
+    "description": "Smalldb-REST usage example",
+    "license": "Apache-2.0",
+    "homepage": "https://smalldb.org/",
+    "authors": [
+        {
+            "name": "Josef Kufner",
+            "email": "josef@kufner.cz"
+        }
+    ],
+    "require": {
+        "smalldb/smalldb-rest": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "": "class/" }
+    }
+}
+
