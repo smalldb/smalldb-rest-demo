@@ -42,10 +42,10 @@ if (!is_dir('data')) {
 }
 
 copy('vendor/smalldb/smalldb-rest/api-v1.php.example', './api-v1.php');
-copy('vendor/smalldb/smalldb-rest/api-v1.php.example', './api-v1-diagram.php');
+copy('vendor/smalldb/smalldb-rest/api-v1-diagram.php.example', './api-v1-diagram.php');
 copy('vendor/smalldb/smalldb-rest/test/example/config.app.json.php', './config.app.json.php');
-copy('vendor/smalldb/smalldb-rest/test/example/database.sqlite', './data/database.sqlite');
-copy('vendor/smalldb/smalldb-rest/test/example/statemachine/blogpost.json', './statemachine/blogpost.json');
-copy('vendor/smalldb/smalldb-rest/test/example/statemachine/session.json', './statemachine/session.json');
-copy('vendor/smalldb/smalldb-rest/test/example/statemachine/user.json', './statemachine/user.json');
+copy('vendor/smalldb/smalldb-rest/test/example/data/database.sqlite', './data/database.sqlite');
+copy('vendor/smalldb/smalldb-rest/test/example/statemachine/blogpost.json.php', './statemachine/blogpost.json.php');
+copy('vendor/smalldb/smalldb-rest/test/example/statemachine/session.json.php', './statemachine/session.json.php');
+copy('vendor/smalldb/smalldb-rest/test/example/statemachine/user.json.php', './statemachine/user.json.php');
 

@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "smalldb/smalldb-rest": "*"
+        "smalldb/smalldb-rest": ">=0.4"
     },
     "autoload": {
         "psr-4": { "": "class/" }
